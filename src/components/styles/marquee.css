@@ -1,0 +1,12 @@
+.news-ticker-container {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .news-ticker-content {
+    white-space: nowrap;
+    padding: 0 1rem;
+  }
+  
