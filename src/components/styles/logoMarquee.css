@@ -1,0 +1,33 @@
+.image-news-ticker-container {
+  background-color: #ffffff;
+  color: #fff;
+  height: 90px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-heading{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "poppins",sans-serif;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(32, 32, 32)
+}
+
+.news-ticker-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 60px;
+}
+
+@media (max-width: 768px)  {
+  .news-ticker-logo {
+
+    margin: 0 30px;
+  }
+  
+}

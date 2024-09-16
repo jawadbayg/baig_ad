@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/header.css';
+import TypeAnimation from './typeAnimation';
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
       <div className="header-text">
         <p className='ads-for-reality'>Ads for Reality</p>
         <h1>The New Level For Billboard Advertising</h1>
-        <p>Your tagline or description goes here.</p>
+        <TypeAnimation/>
       </div>
     </div>
   );

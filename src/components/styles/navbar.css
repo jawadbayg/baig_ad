@@ -1,54 +1,104 @@
 .navbar {
-    height: 90px;
-    background-color: #ffffff;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #054a41;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.logo{
+  height: 3.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+  filter: invert(1);
+}
+/* .navbar-toggler-icon {
+  background-image: url('/images/toggle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; 
+  height: 30px; 
+} */
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-right: 30px;
+  color: #054a41;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #000000;
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+
+.side-menu {
+  position: fixed;
+  top: 90px;
+  color: #000;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+  transition: right 0.3s ease;
+  padding: 1rem;
+  border-left: 1px solid #e6e6e6;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
   }
-  
-  .navbar-brand {
-    color: #054a41;
-    font-family: "Roboto", sans-serif;
-    margin-left: 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    outline: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,...");
-    filter: invert(1);
-  }
-  
+
   .nav-link {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    margin-right: 30px;
-    color: #054a41;
-    transition: color 0.3s;
+    font-size: 1.2rem;
+  }
+
+  .d-lg-flex {
+    display: none !important;
+  }
+  .logo{
+    height: 2.8rem;
   }
   
-  .nav-link:hover {
-    color: #000000;
-  }
-  
- 
-  .ml-auto {
-    margin-left: auto !important;
-  }
-  
- 
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 1rem;
-    }
-    
-    .nav-link {
-      font-size: 1.2rem;
-    }
-  }
-  
+}
+
+

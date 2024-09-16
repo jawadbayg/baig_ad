@@ -1,0 +1,19 @@
+.carousel {
+    max-height: 500px;
+    overflow: hidden; 
+    margin-top: 20px;
+  }
+  
+ 
+  .carousel-item img {
+    height: 500px;
+    object-fit:cover;
+    width: 100%;
+  }
+  
+ 
+  .carousel-caption {
+    bottom: 20px;
+    text-align: center;
+  }
+  

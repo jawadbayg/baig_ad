@@ -1,7 +1,8 @@
 .news-ticker-container {
     background-color: #000000;
     color: #fff;
-    padding: 10px;
+    height: 32px;
+    padding: 3px;
     overflow: hidden;
   }
   
@@ -10,3 +11,6 @@
     padding: 0 1rem;
   }
   
+  .news-ticker-content span {
+    margin-right: 50px; /* Add spacing between each item */
+  }

@@ -1,0 +1,50 @@
+.loader-text {
+    text-align: center;
+}
+
+.circular-loader {
+    padding-top: 50px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+.large-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.subtitle-text-sh {
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 0px !important;
+}
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+   
+    .col-sm-6, .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .text-section{
+        padding: 12px;
+
+    }
+    .col-lg-4:nth-child(3) {
+        margin-top: 10px;
+    }
+}
