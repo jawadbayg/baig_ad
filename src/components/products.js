@@ -17,7 +17,7 @@ const Products = () => {
 
         <div className="col-lg-3 col-md-6 card-column">
           <div className="card">
-            <img src="/gallery/p4.jpg" alt="Card 1" className="card-img-top" />
+            <img src="/images/steel.jpg" alt="Card 1" className="card-img-top" />
           </div>
           <h5 className="card-title">Stainless Steel letters</h5>
         </div>

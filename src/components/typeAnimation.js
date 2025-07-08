@@ -15,7 +15,7 @@ const ExampleComponent = () => {
           1000, 
           'We manufacture Stainless Steel Letters',
           1000, 
-          'We install professional Billboard Signs',
+          'We install professional Signboards',
           1000, 
           'We offer end-to-end Advertisement Solutions',
           1000, 

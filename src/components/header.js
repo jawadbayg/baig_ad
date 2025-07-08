@@ -12,7 +12,7 @@ const Header = () => {
       />
       <div className="header-text">
         <p className='ads-for-reality'>Ads for Reality</p>
-        <h1>The New Level For Billboard Advertising</h1>
+        <h1>The New Level For Signboards Advertising</h1>
         <TypeAnimation/>
       </div>
     </div>

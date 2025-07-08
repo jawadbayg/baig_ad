@@ -14,6 +14,7 @@ import ThirdHeader from './components/thirdHeader';
 import Footer from './components/footer';
 import Gallery from './components/gallery';
 import FloatingButton from './components/floatingBtn';
+import AboutUs from './components/aboutUs';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             </>
           } />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>

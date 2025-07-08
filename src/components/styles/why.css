@@ -1,0 +1,56 @@
+.why-choose-us-section {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'poppins' ,sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .section-title {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: crimson;
+    margin-bottom: 50px;
+  }
+  
+
+  
+  .reason-title {
+    font-size: 1.5rem;
+    color: crimson;
+    margin-bottom: 10px;
+  }
+  
+  .reason-description {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+ 
+  .reason-col:nth-child(1) {
+    padding: 25px;
+    background-color: #ffffff;
+  }
+  
+  .reason-col:nth-child(2) {
+    padding: 25px;
+    background-color: #c62a2a;
+  }
+  
+  .reason-col:nth-child(3) {
+    padding: 25px;
+    background-color: #ffffff;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

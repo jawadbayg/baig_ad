@@ -2,7 +2,7 @@ import React from 'react';
 
 const FloatingButton = () => {
   const handleClick = () => {
-    window.open('https://wa.me/+923074131331?text=Hello!%20I%20need%20assistance.', '_blank');
+    window.open('https://wa.me/+923006653407?text=Hello!%20I%20need%20assistance.', '_blank');
   };
 
   return (

@@ -7,7 +7,7 @@ const ThirdHeader = () => {
       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 left-side">
         <img src="/gallery/p4.jpg" alt="Card 1" className="card-img-top" />
         <p>What We Do</p>
-        <h1>Get Beautiful Billboard Ads For Your Business</h1>
+        <h1>Get Beautiful Signboards Ads For Your Business</h1>
       </div>
     
       <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 right-side">

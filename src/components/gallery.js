@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './styles/gallery.css'; 
 
 const Gallery = () => {
@@ -46,37 +46,48 @@ const Gallery = () => {
     { src: '/gallery/p40.jpeg', alt: 'Image 40' },
   ];
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [visibleImages, setVisibleImages] = useState([]);
+  const observerRef = useRef();
 
-  const handleImageClick = (src) => {
-    setSelectedImage(src);
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = entry.target.dataset.index;
+            setVisibleImages((prev) => [...prev, parseInt(index)]);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  const handleCloseModal = () => {
-    setSelectedImage(null);
-  };
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach((item) => observer.observe(item));
 
-  return (  
+    observerRef.current = observer;
+    return () => observerRef.current.disconnect();
+  }, []);
+
+  return (
     <div className="gallery-container">
-      <h1 className="text-center my-4">Our Work</h1>
+      <h1 className="text-center my-4">Our Projects</h1>
       <div className="gallery-grid">
         {images.map((image, index) => (
-          <div key={index} className="gallery-item" onClick={() => handleImageClick(image.src)}>
-            <img src={image.src} alt={image.alt} className="gallery-image" />
+          <div key={index} className="gallery-item" data-index={index}>
+            {visibleImages.includes(index) ? (
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="gallery-image visible"
+              />
+            ) : (
+              <div className="loader"></div>
+            )}
           </div>
         ))}
       </div>
-
-      {selectedImage && (
-        <div className={`modal-overlay ${selectedImage ? 'show' : ''}`} onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage} alt="Selected" className="modal-image" />
-            <button className="modal-close" onClick={handleCloseModal}>✕</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
-
 export default Gallery;

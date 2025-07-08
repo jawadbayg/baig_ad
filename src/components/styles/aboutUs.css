@@ -1,0 +1,144 @@
+
+
+  
+  .text-section-au {
+    background-color: rgb(197, 196, 196);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .about-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    padding: 20px;
+  }
+  
+ 
+  .image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+ 
+  .about-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+ 
+  .image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 2, 82, 0.8);
+    z-index: 3;
+  }
+  
+  .image-section > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+ 
+  .overlay-text {
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    z-index: 3;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+ 
+  .loading-bar-container {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 3;
+  }
+  
+ 
+  .loading-bar-p {
+    z-index: 3;
+    margin-bottom: 6px;
+    padding: 0;
+    color: white;
+  }
+  
+ 
+  @media (max-width: 768px) {
+   
+  
+    .overlay-text {
+      font-size: 1rem;
+      top: 0%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .loading-bar-container {
+      bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+   
+   
+  }
+  
+  .header-container-au {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+  
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.header-container-au::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.who-we-are{
+    font-family: 'poppins',sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.who-we-are h2{
+    color: crimson;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.testimonials-section {
+    padding: 20px;
+    background-color: #f9f9f9; 
+  }
+  
