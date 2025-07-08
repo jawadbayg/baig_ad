@@ -3,7 +3,9 @@
     color: #fff;
     height: 32px;
     padding: 3px;
+    font-weight: 400;
     overflow: hidden;
+    font-family: 'poppins','sans serif';
   }
   
   .news-ticker-content {
