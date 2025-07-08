@@ -23,8 +23,9 @@ const CircularLoader = ({ percentage }) => {
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      const currentRef = containerRef.current;
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

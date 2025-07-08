@@ -32,10 +32,12 @@ const AboutUs = () => {
     }
 
     return () => {
-      if (loadingBarRef.current) {
-        observer.unobserve(loadingBarRef.current); // Cleanup observer on component unmount
+      const currentRef = loadingBarRef.current;
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
+
   }, []);
 
   return (
