@@ -57,6 +57,14 @@ const CustomNavbar = () => {
             >
               Projects
             </NavLink>
+             <NavLink 
+              to="/contact-us" 
+              activeClassName="active"
+              className="nav-link contact-us-btn"
+              onClick={handleLinkClick} 
+            >
+              Contact Us
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -90,6 +98,14 @@ const CustomNavbar = () => {
             onClick={handleLinkClick} 
           >
             Projects
+          </NavLink>
+          <NavLink 
+            to="/contact-us" 
+            activeClassName="active"
+            className="nav-link"
+            onClick={handleLinkClick} 
+          >
+            Contact Us
           </NavLink>
         </Nav>
       </div>

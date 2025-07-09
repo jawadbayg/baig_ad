@@ -21,9 +21,8 @@ const Footer = () => {
       <div className="col-lg-4 col-sm-12 order-sm-2 order-lg-1 follow-us-section">
         <h5 className="text-uppercase">Follow Us</h5>
         <ul className="list-unstyled d-flex">
-          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white me-3">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white me-3">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white">Instagram</a></li>
+          <li><a href="https://facebook.com/BaigAdvertising" target="_blank" rel="noopener noreferrer" className="text-white me-3">Facebook</a></li>
+          <li><a href="https://www.instagram.com/baig_advertising_co/" target="_blank" rel="noopener noreferrer" className="text-white">Instagram</a></li>
         </ul>
       </div>
   
@@ -32,11 +31,10 @@ const Footer = () => {
         <img src="/images/baigad-logo.png" className="footer-logo" alt="Logo" />
         <p>Deals in All Kinds of Advertisements</p>
         <ul className="list-unstyled d-flex justify-content-center">
-          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-c me-3">About Us</a></li>
-          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-c me-3">Privacy Policy</a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-c me-3">FAQs</a></li>
+          <li><a href="/about-us" rel="noopener noreferrer" className="text-c me-3">About Us</a></li>
+          <li><a href="/about-us" rel="noopener noreferrer" className="text-c me-3">Privacy Policy</a></li>
         </ul>
-        <p className="copywrite">Copyright © Baig Advertising 2024. All Rights Reserved.</p>
+        <p className="copywrite">Copyright © Baig Advertising 2025. All Rights Reserved.</p>
       </div>
   
     </div>

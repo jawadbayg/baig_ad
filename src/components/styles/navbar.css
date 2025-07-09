@@ -36,8 +36,8 @@
 
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.2rem !important; 
   margin-right: 30px;
   color: black !important;
   transition: color 0.3s, transform 0.3s;
@@ -45,6 +45,27 @@
 
 .nav-link:hover {
   color: black !important;
+}
+
+.contact-us-btn {
+  background-color: black !important;
+  color: white !important;
+  padding: 10px 24px !important;
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+}
+.contact-us-btn:hover {
+  color: white !important;
+}
+.contact-us-btn.active {
+  background-color: black !important;
+  color: white !important;
+  padding: 10px 24px !important;
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  font-weight: normal !important;   
 }
 
 
